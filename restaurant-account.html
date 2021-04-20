@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #delivery {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .prim_heading {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 50px;
+            margin: 10px;
+            text-align: center;
+        }
+        #form {
+            margin: 5px;
+            background-color: #e1e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 2px solid black;
+        }
+
+        #form input {
+
+
+            margin: 4px;
+            padding: 4px;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: rgb(241, 232, 232);
+
+
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <sec id="form" class="userform">
+        <h3 class="prim_heading">User Account</h3>
+        <div>
+            <form action="/action.php">
+                <label for="name">Name :</label>
+                <input type="text" placeholder="Enter Your Name"><br>
+                <label for="Phone">Mobile Number :</label>
+                <input type="tel" placeholder="Enter Your Mobile Number"><br>
+                <label for="name">Email :</label>
+                <input type="email" placeholder="Enter Your Email"><br>
+                <label for="cities">city :<input type="text" list="cities"></label>
+                <datalist id="cities">
+                    <option value="Pune"></option>
+                    <option value="Mumbai"></option>
+                    <option value="Nagpur"></option>
+                    <option value="Delhi"></option>
+                    <option value="Jaipur"></option>
+                </datalist><br>
+                <input class="button" type="button" value="create_account">
+            </form>
+        </div>
+    </sec>
+    <div id="delivery">
+        <h3>Select your delivery location</h3>
+        <a href="https://googlemaps.com" target="_blank"><img src="deliveryboi.jpg" alt="deliveryboy"></a>
+    </div>
+    <footer>
+        <a href="restaurant-website.html">BACK</a>
+    </footer>
+    
+</body>
+</html>
